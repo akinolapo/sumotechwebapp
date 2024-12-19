@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 const HeroSection: React.FC = () => {
   return (
@@ -24,8 +26,29 @@ const HeroSection: React.FC = () => {
           {/* List of Coins */}
           <ul className="space-y-2">
             <li className="flex justify-between">
-              <span>1. BTC</span>
+              <span className="flex gap-2">1. <Image src="/btc.png" alt="btc" width={24} height={24}/> BTC</span>
               <span>$102,385.81</span>
+              <span className="text-red-400 flex items-center"><FaArrowDown/> 2.53%</span>
+            </li>
+            <li className="flex justify-between">
+              <span className="flex gap-2">2. <Image src="/eth.png" alt="eth" width={24} height={24}/> ETH</span>
+              <span>$3,699.02</span>
+              <span className="text-red-400 flex items-center"><FaArrowDown/> 4.73%</span>
+            </li>
+            <li className="flex justify-between">
+              <span className="flex gap-2">3. <Image src="/doge.png" alt="doge" width={24} height={24}/> DOGE</span>
+              <span>$0.3644</span>
+              <span className="text-red-400 flex items-center"><FaArrowDown/> 6.43%</span>
+            </li>
+            <li className="flex justify-between">
+              <span className="flex gap-2">4. <Image src="/minidoge.png" alt="minidoge" width={24} height={24}/> MINIDOGE</span>
+              <span>$0.001499</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 13.88%</span>
+            </li>
+            <li className="flex justify-between">
+              <span className="flex gap-2">5. <Image src="/xrp.png" alt="xrp" width={24} height={24}/> XRP</span>
+              <span>$2.41</span>
+              <span className="text-red-400 flex items-center"><FaArrowDown/> 6.15%</span>
             </li>
             {/* Add more coins as needed */}
           </ul>
@@ -37,8 +60,29 @@ const HeroSection: React.FC = () => {
           {/* List */}
           <ul className="space-y-2">
             <li className="flex justify-between">
-              <span>UFD/SOL</span>
-              <span className="text-green-400">+496%</span>
+              <span className="flex gap-2"><Image src="/sol.png" alt="xrp" width={24} height={24}/>UFD<span className="text-gray-400 text-sm">/SOL</span></span>
+              <span>$0.1698</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 526%</span>
+            </li>
+            <li className="flex justify-between">
+            <span className="flex gap-2"><Image src="/sol.png" alt="xrp" width={24} height={24}/>UNO<span className="text-gray-400 text-sm">/SOL</span></span>
+              <span>$0.0008991</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 423%</span>
+            </li>
+            <li className="flex justify-between">
+            <span className="flex gap-2"><Image src="/sol.png" alt="xrp" width={24} height={24}/>LI<span className="text-gray-400 text-sm">/SOL</span></span>
+              <span>$0.01221</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 1318%</span>
+            </li>
+            <li className="flex justify-between">
+            <span className="flex gap-2"><Image src="/sol.png" alt="xrp" width={24} height={24}/>ANDY70B<span className="text-gray-400 text-sm">/SOL</span></span>
+              <span>$0.03500</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 402%</span>
+            </li>
+            <li className="flex justify-between">
+            <span className="flex gap-2"><Image src="/sol.png" alt="xrp" width={24} height={24}/>DRONES<span className="text-gray-400 text-sm">/SOL</span></span>
+              <span>$0.006311</span>
+              <span className="text-green-400 flex items-center"><FaArrowUp/> 303%</span>
             </li>
             {/* Add more pairs */}
           </ul>
